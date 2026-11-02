@@ -11,8 +11,8 @@ class Mysetup < Formula
   desc "Keep your AI agent skills in sync across your computers (preview)"
   homepage "https://mysetup.ai"
   # The macOS universal binary is the default; Linux selects its static build per CPU.
-  url "https://mysetup.ai/cli/releases/0.2.4/mysetup-0.2.4-macos-universal.tar.gz"
-  sha256 "7fe40466ba074aafebfe5a699fba123f680fbf06229eaf880b61f82aede374de"
+  url "https://mysetup.ai/cli/releases/0.2.5/mysetup-0.2.5-macos-universal.tar.gz"
+  sha256 "c60212a5f36acd6df73c49cd1ce74bc7a5163adede7945720262d4f6a51badea"
   license :cannot_represent
 
   livecheck do
@@ -26,12 +26,12 @@ class Mysetup < Formula
 
   on_linux do
     on_intel do
-      url "https://mysetup.ai/cli/releases/0.2.4/mysetup-0.2.4-linux-x86_64.tar.gz"
-      sha256 "06ffe0751626ce6ad5470c885e5a3a14131a755b9943e36d22363573c68a5245"
+      url "https://mysetup.ai/cli/releases/0.2.5/mysetup-0.2.5-linux-x86_64.tar.gz"
+      sha256 "649e21bc394268c778d07d982623d43d8123b29eeeb200d25233d1e6bf8c3210"
     end
     on_arm do
-      url "https://mysetup.ai/cli/releases/0.2.4/mysetup-0.2.4-linux-arm64.tar.gz"
-      sha256 "decb07ba36b7bc9cfa6e35c97838c31bbd9d37548b135f22a411fc0f29a82c05"
+      url "https://mysetup.ai/cli/releases/0.2.5/mysetup-0.2.5-linux-arm64.tar.gz"
+      sha256 "89dcbe5f29e541367c3921ee9c5b91b7ed63b11514a857761bb25820d31454f7"
     end
   end
 
