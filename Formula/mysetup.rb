@@ -11,8 +11,8 @@ class Mysetup < Formula
   desc "Keep your AI agent skills in sync across your computers (preview)"
   homepage "https://mysetup.ai"
   # The macOS universal binary is the default; Linux selects its static build per CPU.
-  url "https://mysetup.ai/cli/releases/0.2.6/mysetup-0.2.6-macos-universal.tar.gz"
-  sha256 "7ea8f2ca6effffdf0dcea3a256fbc396f53e7a34833d510e5e9e76430a86f570"
+  url "https://mysetup.ai/cli/releases/0.2.7/mysetup-0.2.7-macos-universal.tar.gz"
+  sha256 "dc875f245cc2229e6063ac35c9ce5eaaed58217717c3244792080c44a8e64632"
   license :cannot_represent
 
   livecheck do
@@ -26,12 +26,12 @@ class Mysetup < Formula
 
   on_linux do
     on_intel do
-      url "https://mysetup.ai/cli/releases/0.2.6/mysetup-0.2.6-linux-x86_64.tar.gz"
-      sha256 "29713a2b3d65e78dd6490c76bd286282e0bb44ad0c1f9466ab9ae97e90019e29"
+      url "https://mysetup.ai/cli/releases/0.2.7/mysetup-0.2.7-linux-x86_64.tar.gz"
+      sha256 "78b23b5ade3aa58eec5bfb9e678f6b2f34acedb31668e23f9cbf7800e32b8ca0"
     end
     on_arm do
-      url "https://mysetup.ai/cli/releases/0.2.6/mysetup-0.2.6-linux-arm64.tar.gz"
-      sha256 "793a2cd3fbf5f4e9de9383d80fcacaa255992c6288e8cf7127679db7f3596f60"
+      url "https://mysetup.ai/cli/releases/0.2.7/mysetup-0.2.7-linux-arm64.tar.gz"
+      sha256 "872ee1f017fd1846daad713fe9e335dfe4cb8d6b477ff2d648915d29ef91c0fa"
     end
   end
 
@@ -48,8 +48,9 @@ class Mysetup < Formula
       Sign in, choose your skills and connect another device.
       Nothing is published, and background sync stays off until you turn it on.
 
-      After upgrading:      mysetup service restart
-      Before uninstalling:  mysetup auth logout, then mysetup self uninstall
+      After upgrading:      mysetup status (updates the background engine safely)
+      Development pin:      mysetup runtime ensure (review returning to installed updates)
+      Before uninstalling:  mysetup self uninstall
                             (your skills are never removed)
 
       All commands: mysetup help
