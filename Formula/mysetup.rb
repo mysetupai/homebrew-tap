@@ -11,8 +11,8 @@ class Mysetup < Formula
   desc "Keep your AI agent skills in sync across your computers (preview)"
   homepage "https://mysetup.ai"
   # The macOS universal binary is the default; Linux selects its static build per CPU.
-  url "https://mysetup.ai/cli/releases/0.2.7/mysetup-0.2.7-macos-universal.tar.gz"
-  sha256 "dc875f245cc2229e6063ac35c9ce5eaaed58217717c3244792080c44a8e64632"
+  url "https://mysetup.ai/cli/releases/0.2.8/mysetup-0.2.8-macos-universal.tar.gz"
+  sha256 "9e4bf71dea66c9564cef73600244d62e95d2126885ef255912f584cc4ce0f7e3"
   license :cannot_represent
 
   livecheck do
@@ -26,12 +26,12 @@ class Mysetup < Formula
 
   on_linux do
     on_intel do
-      url "https://mysetup.ai/cli/releases/0.2.7/mysetup-0.2.7-linux-x86_64.tar.gz"
-      sha256 "78b23b5ade3aa58eec5bfb9e678f6b2f34acedb31668e23f9cbf7800e32b8ca0"
+      url "https://mysetup.ai/cli/releases/0.2.8/mysetup-0.2.8-linux-x86_64.tar.gz"
+      sha256 "a1695cf108111178e88be3605163efd8a382ba4ecd7c803a2c0db31b02c08e2b"
     end
     on_arm do
-      url "https://mysetup.ai/cli/releases/0.2.7/mysetup-0.2.7-linux-arm64.tar.gz"
-      sha256 "872ee1f017fd1846daad713fe9e335dfe4cb8d6b477ff2d648915d29ef91c0fa"
+      url "https://mysetup.ai/cli/releases/0.2.8/mysetup-0.2.8-linux-arm64.tar.gz"
+      sha256 "729d9078c5b8cfd6894302b5bd5bfb0b38d8c10d0b3bebbd6b03d83a8dda92ef"
     end
   end
 
@@ -45,8 +45,9 @@ class Mysetup < Formula
 
         mysetup onboard
 
-      Sign in, choose your skills and connect another device.
-      Nothing is published, and background sync stays off until you turn it on.
+      Sign in, choose your skills and connect another computer.
+      Setup turns on background sync after your skills are ready, where supported.
+      Nothing is published.
 
       After upgrading:      mysetup status (updates the background engine safely)
       Development pin:      mysetup runtime ensure (review returning to installed updates)
